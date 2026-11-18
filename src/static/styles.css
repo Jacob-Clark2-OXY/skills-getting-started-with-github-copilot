@@ -74,6 +74,96 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.participants-section {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #e0e3f2;
+}
+
+.participants-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #283593;
+  font-size: 15px;
+}
+
+.participant-count {
+  min-width: 24px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background-color: #e8eaf6;
+  color: #283593;
+  font-size: 12px;
+  text-align: center;
+}
+
+.participant-list {
+  display: grid;
+  gap: 6px;
+  max-height: 160px;
+  overflow-y: auto;
+  list-style: none;
+  padding: 0;
+}
+
+.participant-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 5px 6px 5px 10px;
+  border: 1px solid #e8eaf6;
+  border-radius: 5px;
+  background-color: white;
+  color: #444;
+  font-size: 14px;
+}
+
+.participant-email {
+  min-width: 0;
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+.participant-remove-button {
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border: 0;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #b3261e;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.participant-remove-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+.participant-remove-button:hover {
+  background-color: #ffebee;
+  color: #8e1711;
+}
+
+.participant-remove-button:focus-visible {
+  outline: 2px solid #3949ab;
+  outline-offset: 2px;
+}
+
+.participants-empty {
+  color: #777;
+  font-size: 14px;
+  font-style: italic;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
